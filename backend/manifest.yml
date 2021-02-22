@@ -5,12 +5,12 @@ applications:
    instances: 1
    path: target/backend-0.0.1-SNAPSHOT.jar
    services:
-   - p-identity-instance
+   - ldap_sso
    env:
     # *** BEGIN: env vars for the application ***
 
     # The location of the deployed resource server sample application
-    RESOURCE_URL: https://resource-server-sample.apps.20.41.62.88.cf.pcfazure.com
+    RESOURCE_URL: https://resource-server-sample.apps.dev.add2cloud.com
 
     # The grant type used in the /authorize call by Spring Security 5
     SPRING_SECURITY_OAUTH2_CLIENT_REGISTRATION_SSO_AUTHORIZATIONGRANTTYPE: authorization_code
